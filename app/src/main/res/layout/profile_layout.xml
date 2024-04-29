@@ -45,8 +45,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/image1"
-            app:civ_border_color="#FFF"
-            app:civ_border_width="5dp" />
+            app:civ_border_color="#808080"
+            app:civ_border_width="2dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -159,7 +159,7 @@
         android:layout_marginTop="115dp"
         android:src="@drawable/more"
         app:civ_border_color="#FFF"
-        app:civ_border_width="5dp" />
+        app:civ_border_width="2dp" />
 
     <TextView
         android:id="@+id/describe"
@@ -244,8 +244,8 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/story"
-            app:civ_border_color="#FFF"
-            app:civ_border_width="5dp" />
+            app:civ_border_color="#808080"
+            app:civ_border_width="2dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -258,7 +258,47 @@
 
     </LinearLayout>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_more"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_notifications"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stories"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#101010">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_notifications"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="oi"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablayout"/>
 
 
 </RelativeLayout>
